@@ -1,245 +1,264 @@
 <!DOCTYPE html>
 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
 
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-	<meta charset="UTF-8">
-	
-	<!-- Remove this line if you use the .htaccess -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8">
 
-	<meta name="viewport" content="width=device-width">
-	
-	<meta name="description" content="Designa Studio, a HTML5 / CSS3 template.">
-	<meta name="author" content="Sylvain Lafitte, Web Designer, sylvainlafitte.com">
-	
-	<title>WORKS // Designa Studio</title>
-	
-	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
-	<link rel="shortcut icon" type="image/png" href="../img/favicon.png">
-	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../css/style.css">
-	
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!-- Remove this line if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width">
+
+  <meta name="description" content="Designa Studio, a HTML5 / CSS3 template.">
+  <meta name="author" content="Sylvain Lafitte, Web Designer, sylvainlafitte.com">
+
+  <title>WORKS // Designa Studio</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 
 
 <body>
 <!-- Prompt IE 7 users to install Chrome Frame -->
-<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a
+  different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to
+  experience this site.</p><![endif]-->
 
 <div class="container">
 
-    <header id="navtop">
-        <a href="index.html" class="logo fleft">
-            <img src="../img/logo.png" alt="Designa Studio">
-        </a>
+  <header id="navtop">
+    <a href="index.html" class="logo fleft">
+      <img src="../img/logo.png" alt="Designa Studio">
+    </a>
 
-        <nav class="fright">
-            <ul>
-                <li><a href="index.html" class="navactive">Home</a></li>
-                   <li><a href="contact.html">Contact</a></li>
-               </ul>
-               <ul>
-                   <li><a href="about.html">About Me</a></li>
-                   <!--<li>&nbsp;</li>-->
-                   <!--<li><a href="works.html">Works</a></li>-->
-               </ul>
-               <ul>
-                   <li><a href="blog.html">Blog</a></li>
-                   <!--<li><a href="services.html">Services</a></li>-->
-            </ul>
-        </nav>
+    <nav class="fright">
+      <ul>
+        <li><a href="index.html" class="navactive">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <!--<li>&nbsp;</li>-->
+        <!--<li><a href="works.html">Works</a></li>-->
+      </ul>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <!--<li><a href="services.html">Services</a></li>-->
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="works-page main grid-wrap">
+
+    <header class="grid col-full">
+      <hr>
+      <p class="fleft">Works</p>
     </header>
 
 
-	<div class="works-page main grid-wrap">
+    <aside class="grid col-one-quarter mq2-col-full">
+      <p class="mbottom">Keep the same size ratio for thumbnails to avoid breaking the grid because of the
+        margin-bottom.</p>
+      <menu>
+        <a id="work_all" class="arrow buttonactive">All</a><br>
+        <a id="work_1" class="arrow">Web design</a><br>
+        <a id="work_2" class="arrow">Web development</a><br>
+        <a id="work_3" class="arrow">Graphic design</a>
+      </menu>
+    </aside>
 
-		<header class="grid col-full">
-			<hr>
-			<p class="fleft">Works</p>
-		</header>
+    <section class="grid col-three-quarters mq2-col-full">
+
+      <div class="grid-wrap works">
 
 
-		<aside class="grid col-one-quarter mq2-col-full">
-			<p class="mbottom">Keep the same size ratio for thumbnails to avoid breaking the grid because of the margin-bottom.</p>
-			<menu>
-				<a  id="work_all" class="arrow buttonactive">All</a><br>
-				<a  id="work_1" class="arrow">Web design</a><br>
-				<a  id="work_2" class="arrow">Web development</a><br>
-				<a  id="work_3" class="arrow">Graphic design</a>
-			</menu>
-		</aside>
-		
-		<section class="grid col-three-quarters mq2-col-full">
-		
-					<div class="grid-wrap works">
-		
-			
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
-					<a href="work1.html" >
-						<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="work1.html" class="arrow">Project page!</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
+          <a href="work1.html">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="work1.html" class="arrow">Project page!</a>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
-	
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
 
-				<figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
-					<a href="#" >
-					<img src="../img/img.jpg" alt="" >
-					<span class="zoom"></span>
-					</a>
-					<figcaption>
-						<a href="#" class="arrow">Project x</a>
-						<p>Lorem ipsum dolor set amet</p>
-					</figcaption>
-				</figure>
-		
-		
-			</div> <!-- grid inside 3/4-->
-		
-		</section>	
-		
-		
-		
-	</div> <!--main-->
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
 
-    <div class="divide-top">
-    	<footer class="grid-wrap">
-    		<ul class="grid col-one-third social">
-    			<li><a target="_blank" href="http://es.linkedin.com/in/antoniomeh">Linked In</a></li>
-    			<li><a target="_blank" href="https://www.facebook.com/antoniomeh">Facebook</a></li>
-    			<li><a target="_blank" href="https://twitter.com/antoniomeh">Twitter</a></li>
-    			<li><a target="_blank" href="https://plus.google.com/u/0/112679707208176450231/posts">Google+</a></li>
-                <li><a target="_blank" href="http://www.flickr.com/photos/antoniomeh/">Flickr</a></li>
-                <li><a target="_blank" href="https://github.com/antoniomeh">GitHub</a></li>
-    		</ul>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
 
-    		<div class="up grid col-one-third ">
-    			<a href="#navtop" title="Go back up">&uarr;</a>
-    		</div>
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
 
-    		<nav class="grid col-one-third ">
-    			<ul>
-    				<li><a href="index.html">Home</a></li>
-    				<li><a href="about.html">About</a></li>
-    				<li><a href="works.html">Works</a></li>
-    				<li><a href="services.html">Services</a></li>
-    				<li><a href="blog.html">Blog</a></li>
-    				<li><a href="contact.html">Contact</a></li>
-    			</ul>
-    		</nav>
-    	</footer>
-    </div>
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
+
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
+
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
+
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
+
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
+
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
+
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
+
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
+
+        <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_1">
+          <a href="#">
+            <img src="../img/img.jpg" alt="">
+            <span class="zoom"></span>
+          </a>
+          <figcaption>
+            <a href="#" class="arrow">Project x</a>
+
+            <p>Lorem ipsum dolor set amet</p>
+          </figcaption>
+        </figure>
+
+
+      </div>
+      <!-- grid inside 3/4-->
+
+    </section>
+
+
+  </div>
+  <!--main-->
+
+  <div class="divide-top">
+    <footer class="grid-wrap">
+      <ul class="grid col-one-third social">
+        <li><a target="_blank" href="http://es.linkedin.com/in/antoniomeh">Linked In</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/antoniomeh">Facebook</a></li>
+        <li><a target="_blank" href="https://twitter.com/antoniomeh">Twitter</a></li>
+        <li><a target="_blank" href="https://plus.google.com/u/0/112679707208176450231/posts">Google+</a></li>
+        <li><a target="_blank" href="http://www.flickr.com/photos/antoniomeh/">Flickr</a></li>
+        <li><a target="_blank" href="https://github.com/antoniomeh">GitHub</a></li>
+      </ul>
+
+      <div class="up grid col-one-third ">
+        <a href="#navtop" title="Go back up">&uarr;</a>
+      </div>
+
+      <nav class="grid col-one-third ">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
 
 </div>
 
@@ -255,10 +274,12 @@
 
 <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. -->
 <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
+  var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+  (function (d, t) {
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s)
+  }(document, 'script'));
 </script>
 </body>
 </html>

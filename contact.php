@@ -1,7 +1,7 @@
 <?php
 
 $EmailFrom = $_REQUEST['email']; 
-$EmailTo = "antoniomeh@gmail.com"; // Your email address here
+$EmailTo = "info@antoniomeh.info"; // Your email address here
 $Subject = "Contact form";
 $Name = Trim(stripslashes($_POST['name'])); 
 $Email = Trim(stripslashes($_POST['email'])); 
