@@ -8,7 +8,7 @@ It's a simple HTML5
 
 #Sincronizaation
 
-For sync my website, I am using rsync
+For sync with my website, I am using rsync
 
 rsync -avh folder1 folder2 folder3 ssh username@server:folderdestiny
 
