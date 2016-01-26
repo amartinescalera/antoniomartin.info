@@ -8,12 +8,7 @@ $Email = Trim(stripslashes($_POST['email']));
 $Message = Trim(stripslashes($_POST['message'])); 
 
 // validation
-$validationOK=false;
-
-if (!$validationOK) {
-  echo "Error";
-  exit;
-}
+//$validationOK=false;
 
 // prepare email body text
 $Body = "";
@@ -28,6 +23,8 @@ $Body .= "\n";
 $Body .= "\n";
 $Body .= $Message;
 $Body .= "\n";
+
+echo $Body;
 
 // send email 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
