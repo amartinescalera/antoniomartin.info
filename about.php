@@ -11,9 +11,9 @@
 	include("header.php");
 	print("<div class=\"container\">");
 		if($user_language=='es') {
-			include("es/contact.html");
+			include("es/about.html");
 		} else {
-			include("en/contact.html");
+			include("en/about.html");
 		}
 	print("</div>");
 	include("footer.php");

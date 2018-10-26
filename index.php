@@ -6,12 +6,12 @@
 	} 
   
 	//Set the language
-	$user_language=getUserLanguage(); 
-   
-	//De acuerdo al idioma hacemos una o varias redirecciones. 
-	if($user_language=='en') { 
-		header('Location: http://www.antoniomeh.info/en'); 
-	} else { 
-		header('Location: http://www.antoniomeh.info/es'); 
-	} 
+	$user_language=getUserLanguage();
+
+	include("header.php");
+	print("<div class=\"container\">");
+		include("menu.php");
+	print("</div>");
+	include("footer.php");
+
 ?>
