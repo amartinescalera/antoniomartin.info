@@ -18,13 +18,13 @@
   <meta name="description" content="HTML5 / CSS3 template.">
   <meta name="author" content="Antonio Martín de la Escalera Hernández">
 
-  <title>HOME // Antoniomeh</title>
+  <title>Antonio Martin - Software Engineer</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
-  <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
