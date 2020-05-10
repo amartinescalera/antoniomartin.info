@@ -1,0 +1,1 @@
+FROM wordpress:5.4.1-php7.2-apache

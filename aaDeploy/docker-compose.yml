@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+
+    mariadb:
+      build: ./mariadb
+      container_name: mariadb
+      ports:
+        - 3306:3306
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+      volumes:
+        - $HOME/Developer/amDB:/var/lib/mysql
+      networks:
+        - isolation-network
+
+    wordpress:
+      build: ./wordpress
+      container_name: wordpress
+      ports:
+        - 80:80
+      links:
+        - mariadb:mysql
+      environment:
+        WORDPRESS_DB_USER: root
+        WORDPRESS_DB_PASSWORD: root
+        WORDPRESS_DB_NAME: DB4146665
+        WORDPRESS_DEBUG: 1
+      volumes:
+        - $HOME/Projects/amartinescalera/antoniomartin.info:/var/www/html/wp-content/themes/antoniomartin.info
+      networks:
+        - isolation-network
+
+networks:
+  isolation-network:
+    driver: bridge
