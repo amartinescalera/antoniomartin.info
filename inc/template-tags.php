@@ -566,6 +566,23 @@ function mynote_category_labels() {
 }
 
 /**
+ * Show tags labels on homepage.
+ * Parent only.
+ *
+ * @return void
+ */
+function mynote_tags_labels() {
+  $tag_list = get_tags();
+  $i=0;
+  foreach ( $tag_list as $tag ) {
+    echo '<span class="x-label x-label-' . $i . '">' . esc_html( $tag->name ) . '</span>';
+    if ( 10 === ++$i ) {
+      $i = 0;
+    }
+  }
+}
+
+/**
  * Display site information on bottom of page.
  *
  * @return void

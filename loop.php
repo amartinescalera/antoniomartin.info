@@ -15,12 +15,13 @@
 <?php if ( have_posts() ) : ?>
 
 	<div class="row my-4">
-
+        <?php $numberOfPost = 0; ?>
 		<?php while ( have_posts() ) : ?>
-
+        <?php $numberOfPost++; ?>
 		<?php the_post(); ?>
 
-		<div class="<?php mynote_layout_columns(); ?>">
+<!--		<div class="--><?php //mynote_layout_columns(); ?><!--">-->
+		<div class="col-sm-12">
 			<article id="post-<?php the_ID(); ?>" class="article-list">
 				<div class="card my-2">
 					<?php if ( mynote_is_post_card_header() && has_post_thumbnail() ) : ?>
@@ -41,7 +42,7 @@
 						
 						<?php if ( mynote_is_post_card_body_footer() ) : ?>
 							<div class="card-body-footer">
-								<?php // mynote_posted_date_button(); Uncomment this line if needed. ?>
+								<?php mynote_posted_date_button(); ?>
 								<?php mynote_comment_button(); ?>
 								<?php mynote_read_button(); ?>
 								<?php mynote_edit_button(); ?>
@@ -56,8 +57,9 @@
 				</div>
 			</article>
 		</div>
+        <?php if ($numberOfPost == 2) exit; ?>
 
-		<?php endwhile; ?>
+        <?php endwhile; ?>
 
 	</div>
 

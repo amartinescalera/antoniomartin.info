@@ -38,27 +38,37 @@ get_header(); ?>
 							</div>
 						</aside>
 						<?php else : ?>
-						<p class="p-5"><?php mynote_category_labels(); ?></p>
+						<p class="p-5"><?php mynote_tags_labels(); ?></p>
 						<?php endif; ?>
 					</div>
 				</div>
 			</div>
-			<div class="scroll-area">
-				<a href="#main-container"><i class="fas fa-arrow-down"></i></a>
-			</div>
+<!--			<div class="scroll-area">-->
+<!--				<a href="#main-container"><i class="fas fa-arrow-down"></i></a>-->
+<!--			</div>-->
 		</div>
+        <section class="call-to-action ribbon-wrap" id="ribbon" style="background-image:url(<?php echo get_template_directory_uri(); ?>/ten_jobs.jpg);" role="region" aria-label="Ribbon">	<div class="section-overlay-layer">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h2 class="white-text strong">Si sólo trabajas en cosas que te gusten y te apasionen, no deberías tener un plan maestro para ver cómo resulta todo</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 		<div class="container">
 			<div class="row row-layout-choice-home">
 				<section id="main-container" class="<?php echo esc_attr( mynote_main_container_css() ); ?>">
 					<?php get_template_part( 'loop' ); ?>
-					<?php get_template_part( 'pagination' ); ?>
+                    <?php //get_template_part( 'pagination' ); ?>
 				</section>
 
-				<?php if ( mynote_is_sidebar() ) : ?>
-				<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
-					<?php get_sidebar( 'home' ); ?>
-				</aside>
-				<?php endif; ?>
+<!--				--><?php //if ( mynote_is_sidebar() ) : ?>
+<!--				<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">-->
+<!--					--><?php //get_sidebar( 'home' ); ?>
+<!--				</aside>-->
+<!--				--><?php //endif; ?>
 			</div>
 		</div>
 	</main>

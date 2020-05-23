@@ -1,5 +1,5 @@
 <?php
-/**
+/**ƒ
  * Template Name: Landing page
  *
  * @author Terry Lin
