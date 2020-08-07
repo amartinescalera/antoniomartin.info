@@ -6,7 +6,7 @@
  * @link https://terryl.in/
  *
  * @package WordPress
- * @subpackage Mynote
+ * @subpackage Mynote-AntonioMartin.info
  * @since 1.0.7
  * @version 1.3.0
  */

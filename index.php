@@ -6,7 +6,7 @@
  * @link https://terryl.in/
  *
  * @package WordPress
- * @subpackage Mynote
+ * @subpackage Mynote-AntonioMartin.info
  * @since 1.0.0
  * @version 1.0.7
  */
@@ -71,9 +71,22 @@ get_header(); ?>
 <!--				--><?php //endif; ?>
 			</div>
 		</div>
+
 	</main>
 
-	<br class="clearfix" />
+    <br class="clearfix" />
+
+    <section class="call-to-action ribbon-wrap" id="ribbon" style="background-image:url(<?php echo get_template_directory_uri(); ?>/ten_jobs.jpg);" role="region" aria-label="Ribbon">	<div class="section-overlay-layer">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="white-text strong">Si sólo trabajas en cosas que te gusten y te apasionen, no deberías tener un plan maestro para ver cómo resulta todo</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br class="clearfix" />
 
 	<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
 	<aside class="home-middle-sidebar">

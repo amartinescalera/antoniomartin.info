@@ -10,7 +10,7 @@ services:
       environment:
         MYSQL_ROOT_PASSWORD: root
       volumes:
-        - $HOME/Developer/amDB:/var/lib/mysql
+        - pwd/var/lib/mysql
       networks:
         - isolation-network
 
