@@ -129,6 +129,7 @@ function mynote_post_thumbnail() {
 	the_post_thumbnail( $size,
 		array(
 			'class' => 'card-img-top',
+			'style' => 'border-radius: 50%',
 			'alt'   => get_the_title(),
 		)
 	);
@@ -513,22 +514,22 @@ if ( ! function_exists( 'mynote_author_card' ) ) {
 	function mynote_author_card( $avatar_size = 96, $icon_size = 'sm' ) {
 		$description = get_the_author_meta( 'description' );
 		?>
-			<h3 class="section-title"><?php esc_html_e( 'Author', 'mynote' ); ?></h3>
-			<aside class="author-card" itemscope itemprop="author" itemtype="http://schema.org/Person">
-				<div class="author-avatar">
-					<img src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" class="rounded-circle" itemprop="image">
-				</div>
-				<div class="author-info">
-					<div class="author-title">
-						<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" itemprop="name">
-							<?php echo esc_html( get_the_author_meta( 'display_name' ) ); ?>
-						</a>
-					</div>
-					<div class="author-description" itemprop="description">  
-						<?php echo $description; ?>
-					</div>
-				</div>
-			</aside>
+<!--			<h3 class="section-title">--><?php //esc_html_e( 'Author', 'mynote' ); ?><!--</h3>-->
+<!--			<aside class="author-card" itemscope itemprop="author" itemtype="http://schema.org/Person">-->
+<!--				<div class="author-avatar">-->
+<!--					<img src="--><?php //echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?><!--" class="rounded-circle" itemprop="image">-->
+<!--				</div>-->
+<!--				<div class="author-info">-->
+<!--					<div class="author-title">-->
+<!--						<a href="--><?php //echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?><!--" itemprop="name">-->
+<!--							--><?php //echo esc_html( get_the_author_meta( 'display_name' ) ); ?>
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="author-description" itemprop="description">  -->
+<!--						--><?php //echo $description; ?>
+<!--					</div>-->
+<!--				</div>-->
+<!--			</aside>-->
 		<?php
 	}
 }
@@ -572,7 +573,8 @@ function mynote_category_labels() {
  * @return void
  */
 function mynote_tags_labels() {
-  $tag_list = get_tags();
+  //$tag_list =  array("Big Data","Java","Scala","Kafka");
+  $tag_list = get_tags(array('hide_empty' => false));
   $i=0;
   foreach ( $tag_list as $tag ) {
     echo '<span class="x-label x-label-' . $i . '">' . esc_html( $tag->name ) . '</span>';

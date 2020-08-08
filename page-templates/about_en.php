@@ -37,21 +37,20 @@ get_header();
     <section class="vcard">
       <h1 class="fn">Antonio Mart&iacute;n</h1>
 
-      <h2 class="role" style="font-size: 0.9em; font-weight: bold;">Front &amp; Back End Developer - Mobile Developer
-        (IOS &amp; Android) - Java Specialist</h2>
+      <h2 class="role" style="font-size: 0.9em; font-weight: bold;">Data Engineer and Architect</h2>
       <ul class="contact">
-        <li class="email">antoniomeh@gmail.com</li>
+        <li class="email">antoniomartinescalera@gmail.com</li>
         <li class="tel">+34 616 845 513</li>
-        <li class="url"><a href="http://www.antoniomeh.info"
-                           title="Antonio Martin Web Site">http://www.antoniomeh.info</a>
+        <li class="url"><a href="http://www.antoniomartin.info"
+                           title="Antonio Martin Web Site">http://www.antoniomartin.info</a>
         </li>
-        <li class="adr"><span class="locality">Madrid</span>, <span class="country-name">Spain</span></li>
-        <li class="url twitter">@antoniomeh</li>
+        <li class="adr"><span class="locality">Cádiz</span>, <span class="country-name">Spain</span></li>
+        <li class="url twitter">@amartinescalera</li>
       </ul>
       <ul class="contact">
-        <li class="email"> -</li>
+        <li class="email">-</li>
         <li class="tel">+44 7763 360374</li>
-        <li class="url"> -</li>
+        <li class="url">-</li>
         <li class="adr"><span class="locality">Londres</span>, <span class="country-name">Reino Unido</span></li>
         <li class="url twitter"> -</li>
       </ul>
@@ -90,12 +89,12 @@ get_header();
 
         <dt>Lenguajes</dt>
         <dd title="Java">Java</dd>
+        <dd title="Scala">Scala</dd>
         <dd title="C#">C#</dd>
+        <dd title="NodeJS">Node JS</dd>
         <dd title="C">C</dd>
         <dd title="Cobol">Cobol</dd>
         <dd title="Objetive - C">Objetive - C (IOS)</dd>
-        <dd title="Swift">Swift</dd>
-        <dd title="NodeJS">Node JS</dd>
 
         <dt>Java Technologies</dt>
         <dd title="Struts">Struts</dd>
@@ -103,7 +102,9 @@ get_header();
         <dd title="JUnit">JUnit</dd>
         <dd title="Test Drive Development">TDD</dd>
         <dd title="EJB">EJB</dd>
+        <dd title="Websocket">Websocket</dd>
         <dd title="Spring">Spring</dd>
+        <dd title="Spring Boot">Spring Boot</dd>
 
         <dt>Data Base</dt>
         <dd title="MySql">MySql</dd>
@@ -112,7 +113,6 @@ get_header();
         <dd title="DB2">DB2</dd>
 
         <dt>Big Data</dt>
-        <dd title="Scala">Scala</dd>
         <dd title="Spark">Spark</dd>
         <dd title="Kafka">Kafka</dd>
         <dd title="MongoDB">Mongo DB</dd>
@@ -149,13 +149,48 @@ get_header();
       <h1>Work Experience</h1>
       <article>
         <h1>
-          <a href="http://www.strategybigdata.com" title="strategybigdata" target="_blank">Strategy Big Data<span>&nbsp;&nbsp;&nbsp;&nbsp;(Madrid, España)</span></a>
-          <!--<span>Software Engineer</span>-->
+          <a href="https://www.optimagaming.com/" title="optimagaming" target="_blank">Optima MGS<span>&nbsp;&nbsp;&nbsp;&nbsp;(Sevilla, España)</span></a>
         </h1>
 
-        <h2>Big Data Engineer, Software Architect</h2>
-        <time datetime="2017-11-01" class="start">Nov. 2017</time>
+        <h2>Domain and Software Architect</h2>
+        <time datetime="2019-05-01" class="start">May 2019</time>
+<!--        <time datetime="2020-08-01" class="end">Sep. 2020</time>-->
         <span class="end">Present</span>
+
+        <p>
+          OptimaMGS, a brand of Sportradar is a group of companies developing and maintaining Gambling and Bookmaking software
+          worldwide for the commercial online and retail gambling industry since 2012.
+        </p>
+
+        <p>
+          OptimaMGS is transforming from a horizontal architecture, teams are working for all code pieces, to a vertical architecture:
+          The teams work for a specific area. I include in the FixedOdds and Core team during this time.
+        </p>
+
+        <p>
+          My Tasks are:
+        </p>
+
+        <ul>
+          <li>Work in a multicultural team.</li>
+          <li>Take the requirements from the Manager and differents customers</li>
+          <li>Control the Quality Code</li>
+          <li>Transform code from a monolith to several microservices</li>
+          <li>Java 7 and 8</li>
+          <li>Adapt SOAP Architecture to REST</li>
+          <li>Deploy using maven.</li>
+        </ul>
+
+      </article>
+
+      <article>
+        <h1>
+          <a href="http://www.strategybigdata.com" title="strategybigdata" target="_blank">Strategy Big Data<span>&nbsp;&nbsp;&nbsp;&nbsp;(Madrid, España)</span></a>
+        </h1>
+
+        <h2>Data Engineer and Architect</h2>
+        <time datetime="2017-11-01" class="start">Nov. 2017</time>
+        <time datetime="2019-05-01" class="end">May 2019</time>
 
         <p>
           Strategy Big Data is a young company but its founders have been pioneers in the Big Data field. Strategy Big Data
@@ -169,7 +204,7 @@ get_header();
         </p>
 
         <p>
-          My Tasks are:
+          My Tasks were:
         </p>
 
         <ul>
@@ -186,11 +221,10 @@ get_header();
       <article>
         <h1>
           <a href="http://www.datio.com" title="datiobigdata" target="_blank">Datio Big Data<span>&nbsp;&nbsp;&nbsp;&nbsp;(Madrid, España)</span></a>
-          <!--<span>Software Engineer</span>-->
         </h1>
 
         <h2>Software Architect and Data Engineer</h2>
-        <time datetime="2016-08-01" class="start">Agosto 2016</time>
+        <time datetime="2016-08-01" class="start">Aug. 2016</time>
         <time datetime="2017-11-01" class="end">Nov. 2017</time>
 
         <p>
@@ -223,12 +257,11 @@ get_header();
         <h1>
           <a href="http://www.thomascook.com/" title="thomascook">Thomas
             Cook<span>&nbsp;&nbsp;&nbsp;&nbsp;(London, UK)</span></a>
-          <!--<span>Software Engineer</span>-->
         </h1>
 
         <h2>Software Engineer</h2>
-        <time datetime="2014-03-01" class="start">Marzo 2014</time>
-        <time datetime="2016-08-01" class="end">Agosto 2016</time>
+        <time datetime="2014-03-01" class="start">Mar. 2014</time>
+        <time datetime="2016-08-01" class="end">Aug. 2016</time>
 
         <p>
           In Thomas Cook Group (one of the world’s leading leisure travel groups), I have been working for several
@@ -268,7 +301,6 @@ get_header();
       <article>
         <h1>
           <a href="http://www.odigeo.com" title="Odigeo">Opodo (Odigeo Group)<span>&nbsp;&nbsp;&nbsp;&nbsp;(Madrid, Spain)</span></a>
-          <!--<span>Software Engineer</span>-->
         </h1>
 
         <h2>Software Engineer</h2>
@@ -316,8 +348,7 @@ get_header();
         <time datetime="2010-11-30" class="start">Nov 2010</time>
         <time datetime="2011-11-30" class="end">Nov 2011</time>
         <p>
-          Tecnogram develops software's specific for defence industries. Its mainly customers are INDRA SISTEMAS,
-          NAVANTIA,
+          Tecnogram develops software's specific for defence industries. Its mainly customers are INDRA SISTEMAS, NAVANTIA,
           SPANISH NAVY and AIRBUS MILITARY. I have analysed and I developed various applications for Airbus Military:
           Human Resources and incidence systems of planes
         </p>
@@ -373,6 +404,7 @@ get_header();
           <li>Deploy using subversion and Ant for control version.</li>
         </ul>
       </article>
+
       <article>
         <h1><a href="#" title="Telefonica Soluciones">Telefonica Soluciones</a> <span>&nbsp;&nbsp;&nbsp;&nbsp;(Madrid, Spain)</span>
         </h1>
@@ -501,3 +533,5 @@ get_header();
 
 </div>
 <!--main-->
+
+<?php get_footer(); ?>

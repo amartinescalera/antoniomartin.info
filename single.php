@@ -61,9 +61,9 @@ get_header();
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'markdown-body' ); ?>>
 
-							<?php if ( mynote_is_post_featured_image() && has_post_thumbnail() ) : ?>
-								<?php mynote_post_figure(); ?>
-							<?php endif; ?>
+<!--							--><?php //if ( mynote_is_post_featured_image() && has_post_thumbnail() ) : ?>
+<!--								--><?php //mynote_post_figure(); ?>
+<!--							--><?php //endif; ?>
 
 							<div itemprop="articleBody">
 								<?php the_content(); ?>

@@ -23,7 +23,7 @@ if ( has_post_thumbnail() ) {
 
 <div class="data-schema">
 	<main role="main" class="main-header <?php echo $custom_header_css; ?>">
-		<div class="section-intro d-flex align-items-center<?php echo $intro_style; ?>">
+		<div class="section-intro d-flex align-items-center<?php echo $intro_style; ?>"> hola k ase
 			<div class="container px-responsive">
 				<div class="d-md-flex align-items-center">
 					<div class="col-12 col-md-7 text-center text-md-left" style="min-height: 100%; overflow: hidden" >

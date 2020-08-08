@@ -23,7 +23,7 @@ get_header();
   <aside class="grid col-one-quarter mq2-col-full">
     <p class="mbottom">
     </p>
-    <menu>
+    <menu id="bookmarks">
       <ul>
         <li><a href="#skills" class="arrow">Habilidades</a></li>
         <li><a href="#experience" class="arrow">Experiencia Laboral</a></li>
@@ -67,11 +67,6 @@ get_header();
       </p>
 
       <p>
-        Tras casi tres años en Londres, decidí volver a Madrid para incorporarme en una Start up del mundo de Big Data.
-        Desde entonces he orientado mi desarrollo profesional hacia Scala, Spark y otras tecnologías del mundo de Big Data.
-      </p>
-
-      <p>
         Me encanta disfrutar de tiempo libre con amigos o familia también me encanta el deporte. Actualmente combino mi trabajo
         en Strategy Big Data con un proyecto personal.
       </p>
@@ -93,20 +88,22 @@ get_header();
 
         <dt>Lenguajes</dt>
         <dd title="Java">Java</dd>
+        <dd title="Scala">Scala</dd>
         <dd title="C#">C#</dd>
+        <dd title="NodeJS">Node JS</dd>
         <dd title="C">C</dd>
         <dd title="Cobol">Cobol</dd>
         <dd title="Objetive - C">Objetive - C (IOS)</dd>
-        <dd title="Swift">Swift</dd>
-        <dd title="NodeJS">Node JS</dd>
 
-        <dt>Tecnolgías Java</dt>
+        <dt>Tecnologías Java</dt>
         <dd title="Struts">Struts</dd>
         <dd title="Hibernate">Hibernate</dd>
         <dd title="JUnit">JUnit</dd>
         <dd title="Test Drive Development">TDD</dd>
         <dd title="EJB">EJB</dd>
+        <dd title="Websocket">Websocket</dd>
         <dd title="Spring">Spring</dd>
+        <dd title="Spring Boot">Spring Boot</dd>
 
         <dt>Bases de Datos</dt>
         <dd title="MySql">MySql</dd>
@@ -115,7 +112,6 @@ get_header();
         <dd title="DB2">DB2</dd>
 
         <dt>Big Data</dt>
-        <dd title="Scala">Scala</dd>
         <dd title="Spark">Spark</dd>
         <dd title="Kafka">Kafka</dd>
         <dd title="MongoDB">Mongo DB</dd>
@@ -151,13 +147,49 @@ get_header();
       <h1>Experiencia Laboral</h1>
       <article>
         <h1>
+          <a href="https://www.optimagaming.com/" title="optimagaming" target="_blank">Optima MGS<span>&nbsp;&nbsp;&nbsp;&nbsp;(Sevilla, España)</span></a>
+        </h1>
+
+        <h2>Domain y Arquitecto Software</h2>
+        <time datetime="2019-05-01" class="start">May 2019</time>
+        <!--        <time datetime="2020-08-01" class="end">Sep. 2020</time>-->
+        <span class="end">Present</span>
+
+        <p>
+          OptimaMGS es una empresa parte de la multinacional Sportradar. OptimaMGS desarrolla y mantienen software de apuestas
+          en el juego comercial desde 2012.
+        </p>
+
+        <p>
+          OptimaMGS esta tranformando sus equipos desde una arquitectura horizontal, donde los equpos trabajan en todas las partes
+          del código, a una arquitectura vertical para especializar a los miembros de los equipos. Durante este tiempo he estado
+          trabajando para el equpo de FixedOdds y Core.
+        </p>
+
+        <p>
+          My Tasks Son:
+        </p>
+
+        <ul>
+          <li>Trabajar en un equipo multicultural</li>
+          <li>Tomar requisitos del Manager y de los diferentes clientes</li>
+          <li>Controlar la calidad del código</li>
+          <li>Crear microservicios de una arquitectura monolítica</li>
+          <li>Java 7 and 8</li>
+          <li>Adaptar desde una arquitectura SOAP a una REST</li>
+          <li>Desplegar usando maven</li>
+        </ul>
+      </article>
+
+      <article>
+        <h1>
           <a href="http://www.strategybigdata.com" title="strategybigdata" target="_blank">Strategy Big Data<span>&nbsp;&nbsp;&nbsp;&nbsp;(Madrid, España)</span></a>
           <!--<span>Software Engineer</span>-->
         </h1>
 
-        <h2>Ingeniero Big Data, Arquitecto Software</h2>
+        <h2>Data Engineer y Arquitecto</h2>
         <time datetime="2017-11-01" class="start">Nov. 2017</time>
-        <span class="end">Present</span>
+        <time datetime="2019-05-01" class="end">May 2019</time>
 
         <p>
           Strategy Big Data es una compañía joven pero sus fundadores han sido pioneros en Big Data. Strategy
@@ -172,7 +204,7 @@ get_header();
         </p>
 
         <p>
-          Mis tareas son:
+          Mis tareas eran:
         </p>
 
         <ul>
@@ -464,3 +496,5 @@ get_header();
   </aside>
 
 </div>
+
+<?php get_footer(); ?>

@@ -10,7 +10,7 @@ services:
       environment:
         MYSQL_ROOT_PASSWORD: root
       volumes:
-        - pwd/var/lib/mysql
+        - $HOME/developer/amDB:/var/lib/mysql
       networks:
         - isolation-network
 
@@ -27,7 +27,7 @@ services:
         WORDPRESS_DB_NAME: DB4146665
         WORDPRESS_DEBUG: 1
       volumes:
-        - $HOME/Projects/amartinescalera/antoniomartin.info:/var/www/html/wp-content/themes/antoniomartin.info
+        - $HOME/projects/amartinescalera/antoniomartin.info:/var/www/html/wp-content/themes/antoniomartin_info
       networks:
         - isolation-network
 
