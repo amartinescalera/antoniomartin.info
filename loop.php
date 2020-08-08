@@ -20,7 +20,6 @@
         <?php $numberOfPost++; ?>
         <?php the_post(); ?>
 
-      <!--		<div class="--><?php //mynote_layout_columns(); ?><!--">-->
       <div class="col-sm-12">
         <article id="post-<?php the_ID(); ?>" class="article-list">
           <div class="row my-2">
@@ -42,7 +41,6 @@
           </div>
         </article>
       </div>
-      <?php if ($numberOfPost == 3) break; ?>
 
       <?php endwhile; ?>
 
