@@ -67,8 +67,7 @@ get_header();
       </p>
 
       <p>
-        Me encanta disfrutar de tiempo libre con amigos o familia también me encanta el deporte. Actualmente combino mi trabajo
-        en Strategy Big Data con un proyecto personal.
+        Me encanta disfrutar de tiempo libre con mis amigos o familia. También me encanta el deporte.
       </p>
     </section>
 
