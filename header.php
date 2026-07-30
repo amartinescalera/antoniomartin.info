@@ -1,48 +1,81 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The header part of Mynote theme.
+ *
+ * @author Terry Lin
+ * @link https://terryl.in/
+ *
+ * @package WordPress
+ * @subpackage Mynote-AntonioMartin.info
+ * @since 1.0.0
+ * @version 1.0.7.0
+ */
 
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
+$is_brand_url = false;
+$addon_body_class = '';
+$site_brand_url = '';
 
-<head>
-  <meta charset="UTF-8">
+if ( '' !== mynote_site_icon() ) {
+	$is_brand_url = true;
+	$addon_body_class .= 'has-site-icon';
+	$site_brand_url = mynote_site_icon();
+}
 
-  <!-- Remove this line if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <meta name="viewport" content="width=device-width">
-
-  <meta name="description" content="HTML5 / CSS3 template.">
-  <meta name="author" content="Antonio Martín de la Escalera Hernández">
-
-  <title>Antonio Martin - Software Engineer</title>
-
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-<!-- Prompt IE 7 users to install Chrome Frame -->
-<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a
-  different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to
-  experience this site.</p><![endif]-->
-<div class="container">
-	<?php
-
-	if($user_language=='es') {
-		include("es/header.html");
-	} else {
-		include("en/header.html");
+if ( '' !== mynote_site_logo() ) {
+	$is_brand_url = true;
+	if ( ! empty( $addon_body_class ) ) {
+		$addon_body_class .= ' ';
 	}
-	?>
-</div>
+	$addon_body_class .= 'has-site-logo';
+	$site_brand_url = mynote_site_logo();
+}
+
+$addon_navbar_class = '';
+if ( ! mynote_is_responsive() ) {
+	$addon_navbar_class = 'navbar-expand';
+}
+
+?><!doctype html>
+<html <?php language_attributes(); ?> class="no-js">
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<?php if ( mynote_is_responsive() ) : ?>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php endif; ?>
+
+<?php wp_head(); ?>
+
+</head>
+<body <?php body_class( $addon_body_class ); ?>>
+	<?php wp_body_open(); ?>
+	<div class="wrapper">
+		<header class="header clear" role="banner">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark <?php echo $addon_navbar_class; ?>" role="navigation">
+					<?php if ( $is_brand_url ) : ?>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
+						<img src="<?php echo esc_url( $site_brand_url ); ?>" alt="<?php esc_attr_e( 'Logo', 'mynote' ); ?>" class="logo-img">
+					</a>
+					<?php endif; ?>
+
+					<?php if ( has_nav_menu( 'header-menu' ) ) : ?>
+						<?php mynote_nav(); ?>
+					<?php else : ?>
+						<?php mynote_default_nav(); ?>
+					<?php endif; ?>
+
+					<div class="search-bar">
+						<?php get_search_form() ?>
+					</div>
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynote-nav-bar" aria-controls="mynote-nav-bar" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'mynote' ); ?>">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</nav>
+			</div><!-- .container -->
+		</header>
+
+
+		
