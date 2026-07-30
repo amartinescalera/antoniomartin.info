@@ -12,10 +12,8 @@
  */
 $custom_header_image = '';
 $custom_header_css = '';
-if (has_header_image()) {
-    $custom_header_image = 'background-image: url(' . get_header_image() . ');';
-    $custom_header_css = 'has-custom-header';
-}
+$custom_header_image = 'background-image: url(' . get_template_directory_uri() . '/assets/images/portada.png);';
+$custom_header_css = 'has-custom-header';
 
 get_header(); ?>
 
@@ -51,7 +49,7 @@ get_header(); ?>
 
     <div class="container">
       <div class="row row-layout-choice-home">
-          <?php include 'aboutMe.html';?>
+          <?php include 'aboutMe.php';?>
       </div>
     </div>
 
