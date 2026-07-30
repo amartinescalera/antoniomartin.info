@@ -8,10 +8,10 @@
  * This is a stable version and will not be modified anymore.
  *
  * @package   WordPress
- * @author    Terry Lin <terrylinooo>
+ * @author    Antonio Martin <amartinescalera>
  * @license   GPLv3 (or later)
- * @link      https://terryl.in
- * @copyright 2018 Terry Lin
+ * @link      https://www.antoniomartin.info/
+ * @copyright 2026 Antonio Martin
  */
 
 /**

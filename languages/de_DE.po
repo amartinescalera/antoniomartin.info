@@ -274,12 +274,12 @@ msgid "Homepage Sidebar"
 msgstr "Seitenbereich der Webseite"
 
 #. Author URI of the theme
-msgid "https://terryl.in"
-msgstr "https://terryl.in"
+msgid "https://www.antoniomartin.info/"
+msgstr "https://www.antoniomartin.info/"
 
 #. URI of the theme
-msgid "https://terryl.in/en/repository/mynote/"
-msgstr "https://terryl.in/en/repository/mynote/"
+msgid "https://www.antoniomartin.info//en/repository/mynote/"
+msgstr "https://www.antoniomartin.info//en/repository/mynote/"
 
 #. Name of the template
 msgid "Landing page"
@@ -512,8 +512,8 @@ msgid "Sticky Sidebar"
 msgstr "Angepinnte Seitenleiste"
 
 #. Author of the theme
-msgid "Terry Lin"
-msgstr "Terry Lin"
+msgid "Antonio Martin"
+msgstr "Antonio Martin"
 
 #: inc/customer/progress-bar.php:185
 msgid "Text Color"

@@ -594,7 +594,7 @@ if ( ! function_exists( 'mynote_site_info' ) ) {
 		echo esc_html__( 'Copyright', 'mynote' ) . ' &copy; ' . date( 'Y' ) . ' <strong><a href="' . esc_url( get_site_url() ) . '">' . get_bloginfo( 'name' ) . '</a></strong>. ' . esc_html__( 'All rights reserved.', 'mynote' ) . ' ';
 
 		// Keeping the theme credit link encourages me to improve this theme better. Thank you.
-		$theme_link = 'https://terryl.in/';
+		$theme_link = 'https://www.antoniomartin.info//';
 		echo esc_html__( 'Theme by', 'mynote' ) . ' <a href="' . esc_url( $theme_link ) . '" target="_blank">' . esc_html__( 'Mynote', 'mynote' ) . '</a>. ';
 	}
 }
