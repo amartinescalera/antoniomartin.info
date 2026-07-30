@@ -107,22 +107,6 @@ function mynote_custom_gravatar( $avatar_defaults ) {
 
 add_filter( 'avatar_defaults', 'mynote_custom_gravatar' );
 
-/**
- * Threaded Comments
- *
- * @return void
- */
-function mynote_enable_threaded_comments() {
-	if ( ! is_admin() ) {
-		if ( is_singular() && comments_open() && ( 1 === get_option( 'thread_comments' ) ) ) {
-			wp_enqueue_script( 'comment-reply' );
-		}
-	}
-}
-
-add_action( 'get_header', 'mynote_enable_threaded_comments' );
-
-
 // GitHub style comment blocks.
 if ( ! function_exists( 'mynote_comment' ) ) {
 	/**
@@ -351,7 +335,9 @@ add_filter( 'language_attributes', 'mynote_replace_language_attributes' );
  * @return void
  */
 function mynote_single_post_script() {
-	if ( is_single() ) {
+	if ( ! is_single() ) {
+		return;
+	}
 ?>
 	<script>
 
@@ -452,10 +438,9 @@ function mynote_single_post_script() {
 
 	</script>
 <?php
-	}
 }
 
-add_action( 'wp_footer', 'mynote_single_post_script', 1, 1 );
+add_action( 'wp_footer', 'mynote_single_post_script', 20 );
 
 /**
  * 1. An "Auto scroll down" floated button.
@@ -465,6 +450,9 @@ add_action( 'wp_footer', 'mynote_single_post_script', 1, 1 );
  * @return void
  */
 function mynote_scrolling_script() {
+	if ( is_admin() || mynote_is_resume_template() ) {
+		return;
+	}
 	?>
 	<script>
 
@@ -529,7 +517,7 @@ function mynote_scrolling_script() {
 	<?php
 }
 
-add_action( 'wp_footer', 'mynote_scrolling_script', 1, 1 );
+add_action( 'wp_footer', 'mynote_scrolling_script', 20 );
 
 /**
  * Add responsive container to embeds

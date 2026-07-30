@@ -2465,3 +2465,194 @@ strong, .strong {
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
 }
+
+/* About / CV pages */
+.about-page .about-role {
+  color: #586069;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-page .about-contact {
+  color: #586069;
+  font-size: 0.875rem;
+}
+
+.about-page .about-contact .list-inline-item:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.about-page .about-contact a {
+  color: #586069;
+}
+
+.about-page .about-contact a:hover {
+  color: #04A4CC;
+  text-decoration: none;
+}
+
+.about-page .about-contact i {
+  color: #04A4CC;
+  margin-right: 0.35rem;
+}
+
+.about-page .about-sidebar {
+  margin-bottom: 2rem;
+}
+
+.about-page .about-nav .nav-link {
+  color: #586069;
+  font-size: 0.9rem;
+  padding: 0.35rem 0;
+}
+
+.about-page .about-nav .nav-link:hover {
+  color: #04A4CC;
+}
+
+.about-page .about-section {
+  margin-bottom: 3rem;
+}
+
+.about-page .about-section > .section-title {
+  border-left: 3px solid #04A4CC;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  text-transform: uppercase;
+}
+
+.about-page .about-skills dl {
+  margin-bottom: 1.5rem;
+}
+
+.about-page .about-skills dt {
+  color: #24292e;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-page .about-skills dd {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  color: #586069;
+  display: inline-block;
+  font-size: 0.8125rem;
+  margin: 0 0.35rem 0.5rem 0;
+  padding: 0.2rem 0.55rem;
+}
+
+.about-page #experience article {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+}
+
+.about-page #experience article:hover {
+  border-color: #04A4CC;
+}
+
+.about-page #experience article h1 {
+  border: none;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  padding: 0;
+  text-transform: none;
+}
+
+.about-page #experience article h1 a {
+  color: #24292e;
+}
+
+.about-page #experience article h1 a:hover {
+  color: #04A4CC;
+  text-decoration: none;
+}
+
+.about-page #experience article h1 span {
+  color: #586069;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin-top: 0.25rem;
+}
+
+.about-page #experience article h2 {
+  background: #f6f8fa;
+  border-radius: 3px;
+  color: #586069;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.about-page #experience article time {
+  color: #6a737d;
+  display: block;
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-page #experience article p,
+.about-page #education article p,
+.about-page .about-section > p {
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.about-page #experience article ul,
+.about-page #education article ul,
+.about-page #hobbies ul {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.about-page #experience article ul li,
+.about-page #education article ul li,
+.about-page #hobbies ul li {
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.about-page #education article h1 {
+  border: none;
+  font-size: 1.05rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  text-transform: none;
+}
+
+.about-page #education article h2 {
+  color: #586069;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+  text-transform: none;
+}
+
+@media (max-width: 991.98px) {
+  .about-page .about-sidebar {
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .about-page .about-nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .about-page .about-nav .nav-item {
+    margin-right: 1rem;
+  }
+}

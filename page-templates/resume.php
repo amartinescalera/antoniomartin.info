@@ -1,8 +1,22 @@
+<?php
+/**
+ * Template Name: Resume
+ *
+ * @author Antonio Martin
+ * @link https://www.antoniomartin.info/
+ *
+ * @package WordPress
+ * @subpackage AntonioMartin
+ * @since 1.0.0
+ */
 
+get_header();
+
+?>
 
 <div id="doc2" class="yui-t7">
 	<div id="inner">
-	
+
 		<div id="hd">
 			<div class="yui-gc">
 				<div class="yui-u first">
@@ -30,7 +44,7 @@
 						</div>
 						<div class="yui-u">
 							<p class="enlarge">
-								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change.
 							</p>
 						</div>
 					</div><!--// .yui-gf -->
@@ -41,20 +55,20 @@
 						</div>
 						<div class="yui-u">
 
-								<div class="talent">
-									<h2>Web Design</h2>
-									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
-								</div>
+							<div class="talent">
+								<h2>Web Design</h2>
+								<p>Assertively exploit wireless initiatives rather than synergistic core competencies.</p>
+							</div>
 
-								<div class="talent">
-									<h2>Interface Design</h2>
-									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
-								</div>
+							<div class="talent">
+								<h2>Interface Design</h2>
+								<p>Credibly streamline mission-critical value with multifunctional functionalities.</p>
+							</div>
 
-								<div class="talent">
-									<h2>Project Direction</h2>
-									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
-								</div>
+							<div class="talent">
+								<h2>Project Direction</h2>
+								<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+							</div>
 						</div>
 					</div><!--// .yui-gf -->
 
@@ -84,7 +98,7 @@
 					</div><!--// .yui-gf-->
 
 					<div class="yui-gf">
-	
+
 						<div class="yui-u first">
 							<h2>Experience</h2>
 						</div><!--// .yui-u -->
@@ -95,23 +109,22 @@
 								<h2>Facebook</h2>
 								<h3>Senior Interface Designer</h3>
 								<h4>2005-2007</h4>
-								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence.</p>
 							</div>
 
 							<div class="job">
 								<h2>Apple Inc.</h2>
 								<h3>Senior Interface Designer</h3>
 								<h4>2005-2007</h4>
-								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits.</p>
 							</div>
 
 							<div class="job">
 								<h2>Microsoft</h2>
 								<h3>Principal and Creative Lead</h3>
 								<h4>2004-2005</h4>
-								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.</p>
 							</div>
-
 
 							<div class="job last">
 								<h2>International Business Machines (IBM)</h2>
@@ -130,7 +143,7 @@
 						</div>
 						<div class="yui-u">
 							<h2>Indiana University - Bloomington, Indiana</h2>
-							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong></h3>
 						</div>
 					</div><!--// .yui-gf -->
 
@@ -149,4 +162,3 @@
 </div><!--// doc -->
 
 <?php get_footer(); ?>
-

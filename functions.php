@@ -83,48 +83,9 @@ if ( ! function_exists( 'mynote_setup_theme' ) ) {
 add_action( 'after_setup_theme', 'mynote_setup_theme' );
 
 /**
- * Add scripts
+ * Front-end asset loading (styles and scripts).
  */
-function mynote_header_scripts() {
-	if ( 'wp-login.php' !== $GLOBALS['pagenow'] && ! is_admin() ) {
-		wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array( 'jquery' ), '4.1.0' );
-		wp_enqueue_script( 'bootstrap' );
-	}
-}
-
-add_action( 'init', 'mynote_header_scripts' );
-
-/**
- * Add styles
- */
-function mynote_styles() {
-	wp_register_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.0', 'all' );
-	wp_enqueue_style( 'bootstrap' );
-
-	wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/css/fontawesome-all.min.css', array(), '5.1.0', 'all' );
-	wp_enqueue_style( 'fontawesome' );
-
-	wp_register_style( 'mynote-font-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400', array(), '1.0', 'all' );
-	wp_enqueue_style( 'mynote-font-roboto' );
-
-	wp_register_style( 'mynote', get_template_directory_uri() . '/style.css', array(), '1.6.0', 'all' );
-	wp_enqueue_style( 'mynote' );
-}
-
-add_action( 'wp_enqueue_scripts', 'mynote_styles' );
-
-/**
- * Enqueue the javascript that performs in-link comment reply fanciness
- *
- * @return void
- */
-function mynote_enqueue_comment_reply() {
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-
-add_action( 'wp_enqueue_scripts', 'mynote_enqueue_comment_reply' );
+require get_parent_theme_file_path( '/inc/enqueue-assets.php' );
 
 /**
  * Register mynote Navigation

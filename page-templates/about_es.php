@@ -1,56 +1,48 @@
 <?php
-/**ƒ
+/**
  * Template Name: Resume page in Spanish
  *
- * @author Antonio Martín based thingsthatarebrown.com
- * @link http://www.antoniomartin.info/
+ * @author Antonio Martin
+ * @link https://www.antoniomartin.info/
  *
  * @package WordPress
- * @subpackage AntonioMartin-antonio-martin-fork
+ * @subpackage AntonioMartin
+ * @since 1.0.0
  */
-
-$custom_header_image = '';
-$custom_header_css = '';
-
-wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/assets/css/myStyle.css',false,'1.1','all');
-
 
 get_header();
 
 ?>
-<div class="about-page main grid-wrap">
+<div class="data-schema is-page about-page">
+	<div class="single-post-header">
+		<div class="container">
+			<h1 id="post-title">Antonio Mart&iacute;n de la Escalera Hern&aacute;ndez</h1>
+			<p class="about-role">Ingeniero del Software</p>
+			<ul class="about-contact list-unstyled list-inline mb-0">
+				<li class="list-inline-item"><i class="fas fa-envelope" aria-hidden="true"></i> antoniomeh@gmail.com</li>
+				<li class="list-inline-item"><i class="fas fa-phone" aria-hidden="true"></i> +34 616 845 513</li>
+				<li class="list-inline-item"><i class="fas fa-globe" aria-hidden="true"></i> <a href="http://www.antoniomartin.info">antoniomartin.info</a></li>
+				<li class="list-inline-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Madrid, Espa&ntilde;a</li>
+				<li class="list-inline-item"><i class="fab fa-twitter" aria-hidden="true"></i> @antoniomeh</li>
+			</ul>
+		</div>
+	</div>
 
-  <aside class="grid col-one-quarter mq2-col-full">
-    <p class="mbottom">
-    </p>
-    <menu id="bookmarks">
-      <ul>
-        <li><a href="#skills" class="arrow">Habilidades</a></li>
-        <li><a href="#experience" class="arrow">Experiencia Laboral</a></li>
-        <li><a href="#education" class="arrow">Educacion</a></li>
-        <li><a href="#hobbies" class="arrow">Hobbies</a></li>
-      </ul>
-    </menu>
-  </aside>
+	<div class="container">
+		<div class="row">
+			<nav class="col-lg-3 about-sidebar" aria-label="<? esc_attr_e( 'Secciones del CV', 'mynote' ); ?>">
+				<ul class="nav flex-column about-nav">
+					<li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experience">Experiencia Laboral</a></li>
+					<li class="nav-item"><a class="nav-link" href="#education">Educaci&oacute;n</a></li>
+					<li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+				</ul>
+			</nav>
 
-  <aside class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
-    <section class="vcard">
-      <h1 class="fn">Antonio Mart&iacute;n de la Escalera Hern&aacute;ndez</h1>
+			<main class="col-lg-9 markdown-body about-content" role="main">
 
-      <h2 class="role" style="font-size: 0.9em; font-weight: bold;">Ingeniero del Software</h2>
-      <ul class="contact">
-        <li class="email">antoniomeh@gmail.com</li>
-        <li class="tel">+34 616 845 513</li>
-        <li class="url"><a href="http://www.antoniomartin.info"
-                           title="Antonio Martin Web Site">http://www.antoniomartin.info</a>
-        </li>
-        <li class="adr"><span class="locality">Madrid</span>, <span class="country-name">España</span></li>
-        <li class="url twitter">@antoniomeh</li>
-      </ul>
-    </section>
-
-    <section id="summary" class="sectionAbout">
-      <h1>Resumen</h1>
+    <section id="summary" class="about-section">
+      <h2 class="section-title">Resumen</h2>
 
       <p>
         Nací en Santa Cruz de Tenerife pero me crie en Cádiz. Con 20 años me traslade a Madrid para finalizar mis
@@ -64,8 +56,8 @@ get_header();
       </p>
     </section>
 
-    <section id="skills" class="sectionAbout">
-      <h1>Habilidades</h1>
+    <section id="skills" class="about-section about-skills">
+      <h2 class="section-title">Habilidades</h2>
       <dl>
         <dt>Front-End</dt>
         <dd title="Hyper Text Markup Language">HTML</dd>
@@ -136,8 +128,8 @@ get_header();
       </dl>
     </section>
 
-    <section id="experience" class="sectionAbout">
-    <h1>Experiencia Laboral</h1>
+    <section id="experience" class="about-section">
+    <h2 class="section-title">Experiencia Laboral</h2>
 	<article>
         <h1>
           <a href="https://https://www.pagonxt.com" title="pagonxt" target="_blank">PagoNxt<span>&nbsp;&nbsp;&nbsp;&nbsp;(Trabajador remoto localizado en Madrid)</span></a>
@@ -480,9 +472,8 @@ get_header();
       </article>
     </section>
 
-    <section id="education" class="sectionAbout">
-      <h1>Educación</h1>
-      <br/>
+    <section id="education" class="about-section">
+      <h2 class="section-title">Educaci&oacute;n</h2>
       <article>
         <h1>Ingniero Informático</h1>
 
@@ -503,7 +494,6 @@ get_header();
           <li>Conocimientos en Compiladores.</li>
         </ul>
       </article>
-      <br/>
       <article>
         <h1>Ingeniero Técnico en Informática de Gestión</h1>
 
@@ -528,8 +518,8 @@ get_header();
       </article>
     </section>
 
-    <section id="hobbies" class="sectionAbout">
-      <h1>Hobbies e Intereses</h1>
+    <section id="hobbies" class="about-section">
+      <h2 class="section-title">Hobbies e Intereses</h2>
       <ul>
         <li>Deportes: Running, Natación, ciclismo y Triatlón.</li>
         <li>Fotografía.</li>
@@ -540,8 +530,9 @@ get_header();
       </ul>
     </section>
 
-  </aside>
-
+			</main>
+		</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>
