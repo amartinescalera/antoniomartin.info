@@ -2,11 +2,11 @@
 /**
  * Custom template tags for Mynote theme.
  *
- * @author Terry Lin
- * @link https://terryl.in/
+ * @author Antonio Martin
+ * @link https://www.antoniomartin.info/
  *
  * @package WordPress
- * @subpackage Mynote-AntonioMartin.info
+ * @subpackage AntonioMartin
  * @since 1.0.7
  */
 

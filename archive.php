@@ -2,11 +2,11 @@
 /**
  * The Archive page of Mynote theme.
  *
- * @author Terry Lin
- * @link https://terryl.in/
+ * @author Antonio Martin
+ * º
  *
  * @package WordPress
- * @subpackage Mynote-AntonioMartin.info
+ * @subpackage AntonioMartin
  * @since 1.0.0
  * @version 1.2.0
  */

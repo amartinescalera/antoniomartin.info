@@ -6,7 +6,7 @@
  * @link http://www.antoniomartin.info/
  *
  * @package WordPress
- * @subpackage Mynote-AntonioMartin.info-antonio-martin-fork
+ * @subpackage AntonioMartin-antonio-martin-fork
  */
 
 $custom_header_image = '';

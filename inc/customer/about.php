@@ -2,11 +2,11 @@
 /**
  * Mynote theme customizer: About
  *
- * @author Terry Lin
- * @link https://terryl.in/
+ * @author Antonio Martin
+ * @link https://www.antoniomartin.info/
  *
  * @package WordPress
- * @subpackage Mynote-AntonioMartin.info
+ * @subpackage AntonioMartin
  * @version 1.3.0
  * @version 1.3.0
  */
